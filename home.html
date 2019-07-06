@@ -1,0 +1,1173 @@
+
+	
+<html style="overflow-x: hidden">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Template - 3-Pages Website</title>
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+    <link href="https://ultimatefranchise.blob.core.windows.net/cssfiles/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet" />
+    <link href=" https://ultimatefranchise.blob.core.windows.net/cssfiles/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="https://ultimatefranchise.blob.core.windows.net/jsfiles/skipper/skippr.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var images = [];
+
+        images[0] = 'https://ultimatefranchise.blob.core.windows.net/images/Images/synergy-martial-arts/group1pushup1.jpg';
+        images[1] = 'https://ultimatefranchise.blob.core.windows.net/images/Images/synergy-martial-arts/Kids%20Martial%20Arts%202.PNG';
+        images[2] = 'https://ultimatefranchise.blob.core.windows.net/images/Images/synergy-martial-arts/Fitness%20Bootcamp%202.jpg';
+        images[3] = 'https://ultimatefranchise.blob.core.windows.net/images/Images/synergy-martial-arts/Kids%20Martial%20Arts%202.PNG';
+        images[4] = 'https://ultimatefranchise.blob.core.windows.net/images/Images/synergy-martial-arts/Adult%20Martial%20Arts%202.jpg';
+        var i = 1;
+
+        function changeImage() {
+            var image = document.getElementsByTagName('header');
+            image.src = images[i];
+            i++;
+
+            if (i > 4) {
+                i = 0;
+            }
+
+        }
+
+
+        setInterval(changeImage, 4000);
+    </script>
+
+    <script type="text/javascript">
+
+        var isSubmitteddown = false;
+
+        function ValidateBottom() {
+            var txtbottom1 = document.getElementById('fullnamedown');
+            var txtbottom2 = document.getElementById('emaildown');
+            var txtbottom3 = document.getElementById('phonedown');
+            var e = document.getElementById("DropDownList1");
+            var strUser = e.options[e.selectedIndex].value;
+
+            if (txtbottom1.value == '' || txtbottom2.value == '' || txtbottom3.value == '' || strUser == '') {
+                alert('Please fill in all fields.');
+                return false;
+            }
+            else {
+                if (!isSubmitteddown) {
+
+                    btn.value = "Submitting....";
+
+                    isSubmitteddown = true;
+                    return true;
+                }
+                else {
+                    return false;
+                }
+
+            }
+        }
+
+    </script>
+
+
+    <style>
+          html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+			 
+        }
+
+
+		
+		
+        a {
+            color: black;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+            a:hover,
+            a:focus {
+                color: forestgreen;
+            }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .logo {
+            background: url(https://websitebuilder.blob.core.windows.net/images/OtherImages/logo_placeholder.png) no-repeat center 1%;
+            background-color: none;
+            background-size: contain;
+            width: 250px;
+            height: 78px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .header-content {
+            position: relative;
+            width: 100%;
+            padding: 100px 15px 70px;
+            text-align: center;
+        }
+
+            .header-content .header-content-inner h1 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 800;
+            }
+
+            .header-content .header-content-inner h2 {
+                margin-top: 0;
+                margin-bottom: 40px;
+                font-size: 35px;
+                font-weight: 800;
+            }
+
+            .header-content .header-content-inner p {
+                margin-bottom: 50px;
+                font-size: 20px;
+                font-weight: 900;
+                color: white;
+            }
+
+			
+			
+
+			
+			
+        @media(min-width:768px) {
+
+
+            header .header-content {
+                position: absolute;
+                top: 50%;
+                padding: 0 50px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .header-content .header-content-inner {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 1000px;
+            }
+
+                .header-content .header-content-inner h1 {
+                    font-size: 100px;
+                }
+
+                .header-content .header-content-inner p {
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-width: 80%;
+                    font-size: 18px;
+                }
+        }
+
+        .section-heading {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            color: #fff;
+            background-color: #a94442;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .content {
+            padding: 10px 0;
+        }
+
+        .content-2 {
+            color: #fff;
+            background-color: #222;
+        }
+
+        .content-3 {
+            padding: 20px 0 40px;
+            text-align: center;
+        }
+
+        .promo,
+        .promo h3,
+        .promo a:link,
+        .promo a:visited,
+        .promo a:hover,
+        .promo a:active {
+            color: white;
+            text-shadow: 0px 0px 40px black;
+            text-decoration: none;
+        }
+
+        .promo-item {
+            height: 200px;
+            line-height: 180px;
+            text-align: center;
+        }
+
+            .promo-item:hover {
+                background-size: 110%;
+                border: 10px solid rgba(255,255,255,0.3);
+                line-height: 160px;
+            }
+
+            .promo-item h3 {
+                font-size: 40px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+        .item-1 {
+            background: url('../images/writing.jpg');
+            background-color: #a94442;
+        }
+
+        .item-2 {
+            background: url('../images/concert.jpg');
+            background-color: black;
+        }
+
+        .item-3 {
+            background: url('../images/pencil_sharpener.jpg');
+            background-color: #a94442;
+        }
+
+        .item-1,
+        .item-2,
+        .item-3 {
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        .page-footer {
+            text-align: center;
+        }
+
+            .page-footer .contact {
+                padding: 100px 0;
+                background-color: #a94442;
+                color: #fff;
+            }
+
+                .page-footer .contact p {
+                    font-size: 28px;
+                    font-weight: 300;
+                }
+
+                .content-3 .glyphicon,
+                .page-footer .contact .glyphicon {
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+
+            .page-footer .small-print {
+                padding: 50px 0 40px;
+                font-weight: 300;
+            }
+
+        .text-light {
+            color: rgba(255,255,255,.7);
+            font-size: 160%;
+        }
+
+
+        
+        .navbar-default {
+            border-color: rgba(34,34,34,.05);
+            background-color: #fff;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+            .navbar-default .navbar-header .navbar-brand {
+                color: black;
+            }
+
+                .navbar-default .navbar-header .navbar-brand:hover,
+                .navbar-default .navbar-header .navbar-brand:focus {
+                    color: #eb3812;
+                }
+
+            .navbar-default .nav > li > a,
+            .navbar-default .nav > li > a:focus {
+                color: #222;
+            }
+
+                .navbar-default .nav > li > a:hover,
+                .navbar-default .nav > li > a:focus:hover {
+                    color: black;
+                }
+
+            .navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus {
+                color: #a94442 !important;
+                background-color: transparent;
+            }
+
+            .navbar-default .nav > li > a:hover,
+            .navbar-default .nav > li > a:focus:hover {
+                background-color: transparent !important;
+                color: #a94442 !important;
+            }
+
+        @media(min-width:768px) {
+            .navbar-default {
+                border-color: rgba(255,255,255,.3);
+                background-color: white;
+            }
+
+                .navbar-default .navbar-header .navbar-brand {
+                    color: rgba(255,255,255,.7);
+                    letter-spacing: 0.5em;
+                }
+
+                    .navbar-default .navbar-header .navbar-brand:hover,
+                    .navbar-default .navbar-header .navbar-brand:focus {
+                        color: #fff;
+                    }
+
+                .navbar-default .nav > li > a,
+                .navbar-default .nav > li > a:focus {
+                    color: black;
+                    font-size: 20px;
+                }
+
+                    .navbar-default .nav > li > a:hover,
+                    .navbar-default .nav > li > a:focus:hover {
+                        color: #fff;
+                    }
+
+
+                .navbar-default.affix {
+                    border-color: #fff;
+                    background-color: #fff !important;
+                    box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+                }
+
+                    .navbar-default.affix .navbar-header .navbar-brand {
+                        letter-spacing: 0;
+                        color: black;
+                    }
+
+                        .navbar-default.affix .navbar-header .navbar-brand:hover,
+                        .navbar-default.affix .navbar-header .navbar-brand:focus {
+                            color: #eb3812;
+                        }
+
+                    .navbar-default.affix .nav > li > a,
+                    .navbar-default.affix .nav > li > a:focus {
+                        color: #222;
+                    }
+
+                        .navbar-default.affix .nav > li > a:hover,
+                        .navbar-default.affix .nav > li > a:focus:hover {
+                            color: black;
+                        }
+        }
+
+
+
+
+
+
+
+      
+        .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+            border-color: #e7e7e7;
+            margin-top: 50px;
+        }
+
+        @media(max-width:768px) {
+            .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+                border-color: #e7e7e7;
+                margin-top: 0px;
+            }
+        }
+
+        @media(max-width:1024px) and (min-width:768px) {
+            .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+                border-color: #e7e7e7;
+                margin-top: 30px;
+            }
+        }
+
+
+
+        .btn-default {
+            border-color: #fff;
+            color: #222;
+            background-color: #fff;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+            .btn-default:hover,
+            .btn-default:focus,
+            .btn-default.focus,
+            .btn-default:active,
+            .btn-default.active,
+            .open > .dropdown-toggle.btn-default {
+                border-color: #eee;
+                color: #222;
+                background-color: #eee;
+            }
+
+            .btn-default:active,
+            .btn-default.active,
+            .open > .dropdown-toggle.btn-default {
+                background-image: none;
+            }
+
+            .btn-default.disabled,
+            .btn-default[disabled],
+            fieldset[disabled] .btn-default,
+            .btn-default.disabled:hover,
+            .btn-default[disabled]:hover,
+            fieldset[disabled] .btn-default:hover,
+            .btn-default.disabled:focus,
+            .btn-default[disabled]:focus,
+            fieldset[disabled] .btn-default:focus,
+            .btn-default.disabled.focus,
+            .btn-default[disabled].focus,
+            fieldset[disabled] .btn-default.focus,
+            .btn-default.disabled:active,
+            .btn-default[disabled]:active,
+            fieldset[disabled] .btn-default:active,
+            .btn-default.disabled.active,
+            .btn-default[disabled].active,
+            fieldset[disabled] .btn-default.active {
+                border-color: #fff;
+                background-color: #fff;
+            }
+
+            .btn-default .badge {
+                color: #fff;
+                background-color: #222;
+            }
+
+        .btn-primary {
+            border-color: #a94442;
+            color: #fff;
+            background-color: #a94442;
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+        }
+
+            .btn-primary:hover,
+            .btn-primary:focus,
+            .btn-primary.focus,
+            .btn-primary:active,
+            .btn-primary.active,
+            .open > .dropdown-toggle.btn-primary {
+                border-color: black;
+                color: #fff;
+                background-color: black;
+            }
+
+            .btn-primary:active,
+            .btn-primary.active,
+            .open > .dropdown-toggle.btn-primary {
+                background-image: none;
+            }
+
+            .btn-primary.disabled,
+            .btn-primary[disabled],
+            fieldset[disabled] .btn-primary,
+            .btn-primary.disabled:hover,
+            .btn-primary[disabled]:hover,
+            fieldset[disabled] .btn-primary:hover,
+            .btn-primary.disabled:focus,
+            .btn-primary[disabled]:focus,
+            fieldset[disabled] .btn-primary:focus,
+            .btn-primary.disabled.focus,
+            .btn-primary[disabled].focus,
+            fieldset[disabled] .btn-primary.focus,
+            .btn-primary.disabled:active,
+            .btn-primary[disabled]:active,
+            fieldset[disabled] .btn-primary:active,
+            .btn-primary.disabled.active,
+            .btn-primary[disabled].active,
+            fieldset[disabled] .btn-primary.active {
+                border-color: yellowgreen;
+                background-color: yellowgreen;
+            }
+
+            .btn-primary .badge {
+                color: yellowgreen;
+                background-color: #fff;
+            }
+
+
+
+
+
+            
+        .btn {
+            border-radius: 300px;
+            text-transform: uppercase;
+        }
+
+        .btn-lg {
+            padding: 15px 30px;
+        }
+
+        ::-moz-selection {
+            text-shadow: none;
+            color: #fff;
+            background: #222;
+        }
+
+        ::selection {
+            text-shadow: none;
+            color: #fff;
+            background: #222;
+        }
+
+        img::selection {
+            color: #fff;
+            background: 0 0;
+        }
+
+        img::-moz-selection {
+            color: #fff;
+            background: 0 0;
+        }
+
+        .text-primary {
+            color: yellowgreen;
+        }
+
+        .bg-primary {
+            background-color: yellowgreen;
+        }
+
+        @media(max-width:1024px) and (min-width:768px) {
+            .logo {
+                height: 81px;
+                width: 200px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .logo {
+                height: 70px;
+                width: 250px;
+                background-position: left 0px;
+            }
+        }
+
+
+        /*FOOTER NEW*/
+        .footer {
+            color: #E1E1E1;
+            background-color: #323232;
+        }
+
+        .pages {
+            list-style: none;
+            padding: 10px;
+        }
+
+            .pages li {
+                padding-top: 10px;
+                color: white;
+            }
+
+        .pages1 {
+            list-style: none;
+            padding: 10px;
+        }
+
+            .pages1 li {
+                font-size: 16px;
+                padding-top: 10px;
+            }
+
+
+
+        .copy {
+            border-top: 1px solid #a94442;
+            padding: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: none;
+            color: #a94442;
+        }
+
+        .footer a {
+            font-size: 12px;
+            padding: 10px;
+            font-weight: bold;
+            color: grey;
+        }
+
+
+
+        .social-media {
+            margin-left: 80px;
+        }
+
+        #footer {
+            margin-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        .footer table h3 {
+            color: white;
+            font-size: 12px;
+            margin-top: 6px;
+            margin-bottom: auto;
+        }
+
+        .page table p {
+            margin: 5px 0px 0px 0px;
+            color: white;
+            font-size: 17px;
+        }
+
+        .footer table {
+            margin-top: 10px;
+        }
+
+        @media(max-width:768px) {
+            .address {
+                display: none;
+            }
+        }
+
+
+        @media (max-width:768px) {
+            .social-media {
+                margin: 0px;
+                padding: 0px;
+                color: white;
+            }
+
+            .address {
+                margin-left: 40px;
+            }
+
+            #footer {
+                margin-left: 0px;
+            }
+
+            .footer table {
+                margin-top: 10px;
+            }
+        }
+
+        @media(max-width:1200px) {
+            .page {
+                text-align: center;
+            }
+
+            #footer {
+                margin-left: 0px;
+            }
+
+            .social-media {
+                margin: 0px;
+                align-content: center;
+                padding: 0px;
+            }
+
+            .footer table {
+                margin-top: 10px;
+            }
+        }
+
+        .modal-content {
+            background-color: #000000b3;
+            padding: 20px;
+        }
+
+        .modal h2 {
+            font-size: 30px;
+            color: white;
+        }
+
+        .close {
+            color: white;
+            opacity: 1;
+            font-size: 20px;
+        }
+        /* jumbotron */
+        .jumbotron {
+            margin: 90px 0 0 0;
+            padding: 0;
+        }
+
+            .jumbotron #container {
+                width: 100%;
+                height: 750px;
+            }
+        /* iPad Pro */
+        @media (max-width: 1024px) {
+            .jumbotron #container {
+                height: 450px;
+            }
+        }
+        /* iPad, Kindle Fire  */
+        @media (max-width: 768px) {
+            .jumbotron #container {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 414px) {
+            .jumbotron #container {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .jumbotron #container {
+                height: 160px;
+            }
+        }
+
+        .container .text-white {
+            margin-top: 250px;
+            color: white;
+        }
+
+        @media(max-width:768px) {
+            .container .text-white {
+                display: none;
+            }
+        }
+
+        @media(max-width:1440) and (min-width:1200px) {
+            header {
+                position: relative;
+                background-color: black;
+                margin-top: 100px;
+                height: 45vh;
+                min-height: 25rem;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+
+        @media(max-width:1024px) and (min-width:768px) {
+            header {
+                position: relative;
+                background-color: black;
+                margin-top: 100px;
+                height: 35vh;
+                min-height: 25rem;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+
+        @media(max-width:768px) {
+            header {
+                position: relative;
+                background-color: black;
+                margin-top: 80px;
+                height: 25vh;
+                min-height: 20rem;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+
+        .container > .navbar-header {
+            height: 89px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">
+
+                    <div class="logo"></div>
+                </a>
+            </div>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="home.html">Home</a>
+                    </li>
+                  
+                    <li>
+                        <a href="programs.html">Programs</a>
+                    </li>
+                   
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="home">
+        <div class="jumbotron container-fluid">
+            <div id="container">
+                <div id="theTarget">
+                    <div style="background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/sky-scrap..jpg'); background-position: center top;" alt="New Era"></div>
+                    <div style="background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/ferdinand-stoh..jpg'); background-position: center top;" alt="New Era"></div>
+
+                    <div style="background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/sky-scrap..jpg'); background-position: center top;" alt="New Era"></div>
+
+                    <div style="background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/ferdinand-stoh..jpg'); background-position: center top;" alt="New Era"></div>
+                    <div style="background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/sky-scrap..jpg'); background-position: center top;" alt="New Era    "></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3 style="text-align: left;">Eonec et lorem blandit, ultricies lorem et, placerat risus. Fusce placerat, ipsum luctus elementum .</h3>
+                    <h3 style="text-align: left;"><span style="color: black;">Edsss aptent taciti sociosqu ad litora faucibus sodales massa fermentum non. Morbi eget nisi nibh. Cras sed sem eu libero torquent.</span></h3>
+                  
+                    <h3 style="text-align: left;">Tyuisque ed sem eu libero auctor dignissim at eget turpis.</h3>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content 1 -->
+    <section class="content">
+        <div class="container">
+             <div class="row">
+                <div class="col-sm-6" style="padding-bottom: 30px">
+                    <img class="img-responsive center-block" src="https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/droplet-bg.jpg" alt="" style="height: 300px; border-radius: 50%;
+}">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 0px">
+
+                    <h2 class="section-header"><b>Lorem ipsum.</b> <br />
+                        <h3>Fesque fermentum lorem risus. Vestibulum blandit auctor imperdiet. Cras pulvinar aliquam efficitur. Fusce ligula risus, sagittis non dapibus quis, pellentesque a neque. Morbi id libero urna. </h3>
+                    </h2>
+                    <br />
+                </div>
+              
+
+            </div>
+			
+			  <div class="row">
+                <div class="col-sm-6" style="padding-bottom: 30px">
+                    <img class="img-responsive center-block" src="https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/droplet-bg.jpg" alt="" style="border-radius: 50%; height: 300px;">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 0px">
+
+                    <h2 class="section-header"><b>Lorem ipsum.</b><br />
+                        <h3>Weadque fermentum lorem risus. Vestibulum blandit auctor imperdiet. Cras pulvinar aliquam efficitur. Fusce ligula risus, sagittis non dapibus quis, pellentesque a neque. Morbi id libero urna. </h3>
+                    </h2>
+                    <br />
+                </div>
+           
+
+            </div>
+			
+			  <div class="row">
+                <div class="col-sm-6" style="padding-bottom: 30px">
+                    <img class="img-responsive center-block" src="https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/droplet-bg.jpg" alt="" style="border-radius: 50%; height: 300px;">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 0px">
+
+                    <h2 class="section-header"><b>Lorem ipsum.</b><br />
+                        <h3>Quisque fermentum lorem risus. Vestibulum blandit auctor imperdiet. Cras pulvinar aliquam efficitur. Fusce ligula risus, sagittis non dapibus quis, pellentesque a neque. Morbi id libero urna. </h3>
+                    </h2>
+                    <br />
+                </div>
+               
+
+            </div>
+           
+           
+            <div class="row">
+                <div class="col-sm-6" style="padding-bottom: 30px">
+                    <img class="img-responsive center-block" src="https://ultimatefranchise.blob.core.windows.net/images/Images/stock-images/droplet-bg.jpg" alt="" style="border-radius: 50%; height: 300px;">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 0px">
+
+                    <h2 class="section-header"><b>Lorem ipsum.</b>s<br />
+                        <h3>Quisque fermentum lorem risus. Vestibulum blandit auctor imperdiet. Cras pulvinar aliquam efficitur. Fusce ligula risus, sagittis non dapibus quis, pellentesque a neque. Morbi id libero urna. </h3>
+                    </h2>
+                    <br />
+                </div>
+                <a data-toggle="modal" data-target="#trialForm" class="btn btn-primary btn-lg">Load More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="content content-3">
+        <div class="container">
+            <h2 class="section-header">Quisque feugiat congue nibh, et viverra magna congue ut. Aliquam non tristique risus, id consequat orci. Phasellus eget dui rutrum, bibendum metus fringilla, placerat enim. Duis laoreet mauris dui, id volutpat mi condimentum a. Nullam ornare elit vel dolor gravida, ac finibus libero porta. </h2>
+            
+            <a data-toggle="modal" data-target="#trialForm" class="btn btn-primary btn-lg">Loreum Ipsuj</a>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <div class="footer container-fluid no-padding">
+        
+        <div class="row">
+            <div class="col-lg-12" id="footer">
+                <center>
+                    <div class="col-lg-2"></div>
+<div class="col-lg-2 page">
+<center>
+<table>
+<tr>
+<td><p style="padding:0px;"><a href="home.html">HOME</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="programs.html">PROGRAMS</a></p></td>
+</tr>
+ 
+<tr>
+<td><p style="padding:0px;"><a href="contact.html">CONTACT</a></p></td>
+</tr>
+</table>
+</center>
+
+
+</div>
+
+    <div class="col-lg-4 address">
+<center>
+<table >
+<tr class="address2">
+<td>
+<h3>Company Title</h3>
+</td>
+</tr>
+<tr>
+<td>
+<h3>Street Name</h3>
+</td>
+</tr>
+<tr>
+<td>
+<h3> Province, Pincode.
+</h3>
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td>
+<h3><a href="mailto:a@aaa.com" style="padding:0px; color:white">youremail@a.com</a></h3>
+    
+
+</td>
+</tr>
+</table>
+
+</center>
+</div>
+                    <div class="col-lg-3 " style="color:white;">
+<center>
+    <ul class="pages">
+<li>
+<span>
+<a style="font-size:25px;" href="" >
+<span class="fa fa-facebook" >&nbsp;&nbsp;&nbsp;</span>
+</a>
+</span>
+<span >
+<a  style="font-size:25px;" href="">
+<span class="fa fa-instagram" >&nbsp;&nbsp;&nbsp;</span>
+</a>
+</span>
+<span >
+<a  style="font-size:25px;" href="">
+<span class="fa fa-twitter" >&nbsp;&nbsp;&nbsp;</span>
+</a>
+</span>
+</li>
+</ul>
+</center>
+</div>
+                    <div class="col-lg-1"></div>
+
+
+</center>
+
+                <div class="col-lg-2"></div>
+            </div>
+
+
+            <div class="col-lg-12 copy" style="font-size: 10px;">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3">
+                    <center>
+<span>&#169; Company Name - 2019. All Rights Reserved</span>
+</center>
+                </div>
+                <div class="col-lg-2 " style="font-size: 10px;">
+                    <center>
+<a href="" style="font-size:10px;">
+Privacy Policy 
+</a>
+</center>
+                </div>
+                <div class="col-lg-2 " style="font-size: 10px;">
+                    <center>
+<a href="https://gigaprofits.com/" style="font-size:10px;">Designed By AshishAhir</a>
+</center>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <form runat="server" id="form1">
+
+        <div class="modal fade footer-form no-padding" id="trialForm" role="dialog" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 style="color: white">Rlacerat, ipsum luctus elementum rhoncus, tellus velit feugiat purus.</h4>
+                    <br />
+      <div class="row" style="display: block;">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" id="fullnamedown" class="form-control" autocomplete="off" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="display: block;">
+
+                                <div class="col-lg-12">
+
+                                    <div class="form-group">
+                                        <input type="text" id="emaildown" class="form-control" autocomplete="off" TextMode="Email" placeholder="Email">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="display: block;">
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" id="phonedown" class="form-control" autocomplete="off" TextMode="phone" placeholder="Phone">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br />
+                        <center>    <input type="submit" id="signIndown" class="btn btn-#027a7c" value="Submit" autocomplete="off" TextMode="phone" onclick="javascript: return ValidateBottom()" placeholder="Phone" Style="margin-top: 4px; font-size: 15px; padding: 10px 30px 10px 30px; color: white; background-color:#211305f7; border:none;">   </center> 
+                            <div class="align-center top-space-small bottom-space-small small  tc-text">
+
+                            </div>
+                    <div class="align-center top-space-small bottom-space-small small tc-text">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+  
+    <script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/jquery-1.11.3.min.js"></script>
+
+    <script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/bootstrap.min.js"></script>
+
+    
+    <script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/jquery.easing.min.js"></script>
+    <script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/skipper/skippr.js"></script>
+   
+    <script>
+        // Offset for Site Navigation
+        $('#siteNav').affix({
+            offset: {
+                top: 100
+            }
+        })
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $("#theTarget").skippr();
+        });
+    </script>
+
+   
+    <script>
+        $("#theTarget").skippr({
+            // transition type (fade, slide)
+            transition: 'fade',
+            // transition speed between slides in milliseconds (any int)
+            speed: 1000,
+            easing: 'easeOutQuart',
+            // navigation bullet shape (bubble, block)
+            navType: 'bubble',
+            // choose the children element type of the target element. (div, img)
+            childrenElementType: 'div',
+            // display arrow or not (true, false)
+            arrows: true,
+            // autoplay or not (true, false)
+            autoPlay: true,
+            // display each slide when autoplay is running in milliseconds (any int)
+            autoPlayDuration: 3000,
+            keyboardOnAlways: true,
+            hidePrevious: false
+        });
+    </script>
+
+</body>
+
+</html>
+
+
